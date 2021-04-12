@@ -9,6 +9,7 @@
   "scripts": {
     "buildEnvTypes": "node scripts/buildEnvTypes.js",
     "build": "node scripts/build.js",
+    "bytenode": "electron scripts/bytenode.js",
     "precompile": "cross-env MODE=production npm run build",
     "compile": "electron-builder build --config electron-builder.config.js --dir --config.asar=false",
     "pretest": "cross-env MODE=test npm run build",
@@ -40,6 +41,7 @@
     "vue-tsc": "^0.0.23"
   },
   "dependencies": {
+    "bytenode": "^1.2.2",
     "electron-updater": "^4.3.8",
     "vue": "^3.0.11",
     "vue-router": "^4.0.6"
